@@ -1,3 +1,4 @@
+<title>CubeBox Games - Play</title>
 <section style="position: relative">
   <body style="top: 0; left: 0">
     <nav>
@@ -31,16 +32,22 @@
       <a class="button" onclick="joingame()">Join</a>
     </div>
 
-    <!-- Game src -->
+    <!-- Game html src -->
   </body>
 </section>
-<!-- JS Scripts -->
-<!-- Added both paths so it works while developing -->
+
+<!-- Import depends -->
+<script src="config.js"></script>
 <script src="https://server.cubeboxgames.repl.co/socket.io/socket.io.js"></script>
+
+<!-- Socket connection -->
 <script>
   const socket = io("https://server.cubeboxgames.repl.co/");
 </script>
+
+<!-- JS Scripts -->
 <script src="./assets/main.js"></script>
 <script src="./assets/gamesrc/join.js"></script>
+
 <!-- CSS -->
 <link rel="stylesheet" href="./assets/styles.css" />
