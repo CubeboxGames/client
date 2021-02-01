@@ -14,6 +14,41 @@ body {
   text-align: center;
 }
 
+input {
+  border: 2px solid #23272a;
+  background-color: #23272a;
+  color: white;
+  border-radius: 8px;
+  width: 20%;
+  height: 5%;
+  margin: 8px 0;
+  box-shadow: 0 4px 0 0 #000000;
+}
+
+.button {
+  border: 2px solid #23272a;
+  background-color: #23272a;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 0 0 #000000;
+  position: relative;
+  top: 0px;
+}
+
+.button:hover {
+  border: 2px solid #23272a;
+  background-color: #23272a;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: none;
+  position: relative;
+  top: 3px;
+}
+
 a {
   text-decoration: none;
   color: white;

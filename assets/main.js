@@ -1,3 +1,6 @@
+function directions(text) {
+  getElm("directions").innerHTML = text;
+}
 function getElm(id) {
   return document.getElementById(id);
 }

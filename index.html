@@ -6,13 +6,44 @@
       </div>
       <p id="navbarinfo"></p>
     </nav>
-    <br><br><br>
-    <h2>hi</h2>
+    <br /><br /><br /><br />
+
+    <h2 id="directions">Connect to a game</h2>
+
+    <!-- Login -->
+    <div id="connect">
+      <input
+        id="gameid"
+        placeholder="Game Code *"
+        oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"
+        onKeyDown="if(['backspace'].includes(event.key)) return false;"
+        autocomplete="off"
+        required
+      />
+      <br />
+      <input
+        type="text"
+        id="playerusername"
+        placeholder="Username *"
+        required
+      />
+      <br /><br />
+      <a class="button" onclick="joingame()">Join</a>
+    </div>
+
+    <!-- Game src -->
   </body>
 </section>
-
-<script src="/assets/main.js"></script>
-<script src="./assets/main.js"></script>
-<link rel="stylesheet" href="./assets/styles.css" />
-<link rel="stylesheet" href="/assets/styles.css" />
+<!-- JS Scripts -->
 <!-- Added both paths so it works while developing -->
+<script src="./assets/socket.io/socket.io.js"></script>
+<script>
+  const serverinfo = {
+    url: "localhost:3000",
+  };
+  const socket = io();
+</script>
+<script src="./assets/main.js"></script>
+<script src="./assets/gamesrc/join.js"></script>
+<!-- CSS -->
+<link rel="stylesheet" href="./assets/styles.css" />
