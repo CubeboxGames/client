@@ -17,7 +17,7 @@
         id="gameid"
         placeholder="Game Code *"
         oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"
-        onKeyDown="if(['backspace'].includes(event.key)) return false;"
+        onKeyDown="if(!['backspace'].includes(event.key)) return false;"
         autocomplete="off"
         required
       />
