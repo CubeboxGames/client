@@ -17,7 +17,7 @@
         id="gameid"
         placeholder="Game Code *"
         oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"
-        onKeyDown="if(!['backspace'].includes(event.key)) return false;"
+        onKeyDown="if(!['backspace', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'].includes(event.key) || this.value.length > 3) return false;"
         autocomplete="off"
         required
       />
@@ -42,7 +42,7 @@
 
 <!-- Socket connection -->
 <script>
-  const socket = io("https://server.cubeboxgames.repl.co/");
+  const socket = io("http://server.cubeboxgames.repl.co/");
 </script>
 
 <!-- JS Scripts -->
