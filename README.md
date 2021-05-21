@@ -1,5 +1,7 @@
 # CubeBox Client
 
+# Client coming soon!
+
 ## What is this?
 
 This is the client used for all cubebox games
