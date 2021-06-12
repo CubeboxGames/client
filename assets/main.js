@@ -1,5 +1,3 @@
-const socket = io("localhost:3000");
-
 function directions(text) {
   getElm("directions").innerHTML = text;
 }
